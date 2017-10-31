@@ -13,15 +13,15 @@ A list of research questions we would like to address during the project:
 - Does it correlate with the country’s taste preferences?
 
 # Dataset
-Yummly provides an API (https://developer.yummly.com/intro) with a limited number of calls for academic projects. We already sent a request to get access to it. The limit is set to 30K calls in total, therefore we may need to build a web crawler to fetch the data.
-Yummly’s platform provides a search engine which filters the recipes by cuisine origin (e.g. Japanese, Italian…), flavours (e.g. sweet, salty…). For each recipe, Yummly provides its ingredients, nutritional facts and some tags characterising the dish.
+Yummly provides an API (https://developer.yummly.com/intro) with a limited number of calls for academic projects. We already sent a request to get access to it. The limit is set to 30K calls in total, therefore we may need to build a web crawler to scrap the data.
+Yummly’s platform provides a search engine which filters the recipes by cuisine origin (e.g. Japanese, Italian…) and flavours (e.g. sweet, salty…). For each recipe, Yummly provides its ingredients, nutritional facts and some tags characterising the dish.
 The Yummly API provides  the following endpoints for searching and fetching recipes:
-- get requests can be done in the following way: `http://api.yummly.com/v1/api/recipes?_app_id=app-id&_app_key=app-key&your _search_parameters`
-- The parameter `allowedCuisine[]` filter the search results based a specified cuisine
-- The parameters `salty`, `sour`, `sweet`, `bitter`, `meaty` and `piquant` allow us to specify the expected taste of the results
-- The API returns JSON objects containing the information about the recipes matching the query argument
+- `GET` requests can be done in the following way: `http://api.yummly.com/v1/api/recipes?_app_id=app-id&_app_key=app-key&your _search_parameters` to search recipes
+- The parameter `allowedCuisine[]` filter the search results based a specific cuisine
+- The parameters `salty`, `sour`, `sweet`, `bitter`, `meaty` and `piquant` specify the expected taste of the results
+- The API returns JSON objects containing information about the recipes matching the query argument
 In the case where Yummly limits our usage of the API, we will build a web crawler based on the following pattern in the website’s HTML DOC and URLs:
-- The URLs are structured in the following way: `https://www.yummly.com/recipes?q=search_parameters`
+- The search URLs are structured in the following way: `https://www.yummly.com/recipes?q=search_parameters`
 - The search parameters passed in the URL search query are similar to the ones described in the API documentation
 - The returned HTML contains links to recipes information pages nested in div tags having the same class attribute
 - The recipes information pages have also the same pattern and can be web scrapped using the techniques studied in the course 
