@@ -33,4 +33,4 @@ We setup the following goals for the next milestone:
 - Characterise the metrics used to measure the taste preferences (Salty/Sweet…)
 
 # Questions for TAa
-Add here some questions you have for us, in general or project-specific.
+None.
