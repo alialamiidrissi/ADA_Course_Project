@@ -27,10 +27,10 @@ In the case where Yummly limits our usage of the API, we will build a web crawle
 - The recipes information pages have also the same pattern and can be web scrapped using the techniques studied in the course 
 
 # A list of internal milestones up until project milestone 2
-We setup the following goals for the next milestone:
-- Retrieve a raw dataset by crawling the Yummly website/API
+We setup the following goals as next milestones:
+- Retrieve a raw dataset by crawling the Yummly website and/or API
 - Clean the dataset and perform a first exploratory analysis
-- Characterise the metrics used to measure the taste preferences (Salty/Sweet…)
+- Characterise the metrics used to measure the taste preferences (salty/sweet…)
 
 # Questions for TAa
 None.
