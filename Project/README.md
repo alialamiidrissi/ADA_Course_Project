@@ -26,6 +26,16 @@ In the case where Yummly limits our usage of the API, we will build a web crawle
 - The returned HTML contains links to recipes information pages nested in div tags having the same class attribute
 - The recipes information pages have also the same pattern and can be web scrapped using the techniques studied in the course 
 
+## UPDATE:
+
+We built a scrapper `spider.py` to collect recipes from a number of cuisines with the Yummly API.The results can be found under the `data` folder.
+Here is a sample of a search recipe result:
+
+
+Each recipe has an id which we use to get more data about the recipe (nutrition facts, cooking time, etc …).
+Here is a sample of the result we get using the search with id:
+
+
 # A list of internal milestones up until project milestone 2
 We setup the following goals as next milestones:
 - Retrieve a raw dataset by crawling the Yummly website and/or API
