@@ -28,7 +28,7 @@ In the case where Yummly limits our usage of the API, we will build a web crawle
 
 ## UPDATE:
 
-We built a scrapper `spider.py` to collect recipes from a number of cuisines with the Yummly API.The results can be found under the `data` folder.
+We built a scrapper `spider.py` to collect recipes from a number of cuisines with the Yummly API. For each of the following cuisines: `['American','Asian','Chinese','Cuban','English','French','German','Greek','Hawaiian','Hungarian','Indian','Irish','Italian','Japanese','Mexican','Moroccan','Portuguese','Spanish','Swedish','Thai']`, we access the first 500 results using the search endpoint (see above), and save them in json files. The results can be found under the `data` folder.
 Here is a sample of a search recipe result:
 ```json
 {
@@ -75,8 +75,8 @@ Here is a sample of a search recipe result:
 }
 ```
 
-Each recipe has an id which we use to get more data about the recipe (nutrition facts, cooking time, etc …).
-Here is a sample of the result we get using the search with id:
+Each recipe has an `id` which can be used to get more data about the recipe (nutrition facts, cooking time, etc …).
+Here is a sample of a recipe:
 ```json
 {
     "attribution": {
@@ -202,6 +202,7 @@ Here is a sample of the result we get using the search with id:
     "id": "Hot-Turkey-Salad-Sandwiches-Allrecipes"
 }
 ```
+For the purpose of our project, we are interested in flavours, ingredients and nutritional facts of recipe from different cuisines which we successfully collected using the steps above.
 
 # A list of internal milestones up until project milestone 2
 We setup the following goals as next milestones:
