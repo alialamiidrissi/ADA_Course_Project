@@ -28,7 +28,7 @@ In the case where Yummly limits our usage of the API, we will build a web crawle
 
 ## UPDATE:
 
-We built a scrapper `spider.py` to collect recipes from a number of cuisines with the Yummly API. For each of the following cuisines: `['American','Asian','Chinese','Cuban','English','French','German','Greek','Hawaiian','Hungarian','Indian','Irish','Italian','Japanese','Mexican','Moroccan','Portuguese','Spanish','Swedish','Thai']`, we access the first 500 results using the search endpoint (see above), and save them in json files. The results can be found under the `data` folder.
+We built a scrapper `spider.py` to collect recipes from a number of cuisines with the Yummly API. For each of the following cuisines: `American, Chinese, Cuban, English, French, German, Greek, Hawaiian, Hungarian, Indian, Irish, Italian, Japanese, Mexican, Moroccan, Portuguese, Spanish, Swedish, Thai`, we access the first 500 results using the search endpoint (see above), and save them in json files. The results can be found under the `data` folder.
 Here is a sample of a search recipe result:
 ```json
 {

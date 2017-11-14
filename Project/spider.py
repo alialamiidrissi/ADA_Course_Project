@@ -21,7 +21,7 @@ endpoint = 'http://api.yummly.com/v1/api/recipes?_app_id={}&_app_key={}'.format(
 # exit()
 
 data = []
-cuisines = ['American','Asian','Chinese','Cuban','English','French','German','Greek','Hawaiian','Hungarian','Indian','Irish','Italian','Japanese','Mexican','Moroccan','Portuguese','Spanish','Swedish','Thai']
+cuisines = ['American','Chinese','Cuban','English','French','German','Greek','Hawaiian','Hungarian','Indian','Irish','Italian','Japanese','Mexican','Moroccan','Portuguese','Spanish','Swedish','Thai']
 for cuisine in tqdm(cuisines):
 	if os.path.exists(cuisine.lower()+'.json'):
 		continue
