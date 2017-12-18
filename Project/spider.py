@@ -14,11 +14,10 @@ def build_query(endpoint, params):
 
 time_out = 300
 max_results = 500
-api_id = '97235512'
-api_key = '910547f3d9b411971d1318bd99a18460'
+api_id = 'INSERT_API_ID'
+api_key = 'INSERT_API_KEY'
 endpoint = 'http://api.yummly.com/v1/api/recipes?_app_id={}&_app_key={}'.format(api_id, api_key)
-# print('http://api.yummly.com/v1/api/metadata/cuisine?_app_id={}&_app_key={}'.format(api_id, api_key))
-# exit()
+
 
 data = []
 cuisines = ['American','Asian','Chinese','Cuban','English','French','German','Greek','Hawaiian','Hungarian','Indian','Irish','Italian','Japanese','Mexican','Moroccan','Portuguese','Spanish','Swedish','Thai']

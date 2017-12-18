@@ -5,12 +5,10 @@ Diets and food habits may vary widely from country to country in terms of ingred
 
 # Research questions
 A list of research questions we would like to address during the project:
-- What are the taste preferences of each country?
-- How can we define a country’s taste preferences in term of ingredients?
-- What are the different clusters of countries sharing similar tastes?
-- What measure of similarity can we use to suggest a similar cuisine?
-- What are the nutritional intakes of a typical dish in a country?
-- Does it correlate with the country’s taste preferences?
+- What are the most commomly used ingredients?
+- What are the most distinctive ingredients?
+- How can we cluster cuisine in terms of their recipe components?
+- How do cuisines influence each other?
 
 # Dataset
 Yummly provides an API (https://developer.yummly.com/intro) with a limited number of calls for academic projects. We already sent a request to get access to it. The limit is set to 30K calls in total, therefore we may need to build a web crawler to scrap the data.
