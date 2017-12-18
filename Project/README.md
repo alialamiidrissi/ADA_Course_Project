@@ -3,6 +3,12 @@
 # Abstract
 Diets and food habits may vary widely from country to country in terms of ingredients and cooking techniques. Nevertheless, dishes from different regions may share similarities in flavours and tastes. This project aims to help people discover new recipes matching their preferences. Our analysis will be based on Yummly, a platform mainly used in North America containing recipes from different countries. First, we will characterise the taste preferences in a group of countries along with the nutritional intake of an average dish. Second, we will analyse similarities between cuisines in terms of flavours with the purpose of building a recipe recommender that matches one’s taste.
 
+# How to run the Notebook
+1. Clone the repository using `git clone <name repo>`
+2. Download the dataset from [here](https://drive.google.com/open?id=18IHx-7FdWY9TdR4yHG2g-t1i0qAzdXOy) and unzip it under the folder data
+3. Launch `jupyter notebook` and navigate to the cloned folder
+4. Open `Final notebook.ipynb` to see the analysis
+
 # Research questions
 A list of research questions we would like to address during the project:
 - What are the most commomly used ingredients?
