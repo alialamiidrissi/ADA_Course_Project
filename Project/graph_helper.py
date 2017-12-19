@@ -21,9 +21,9 @@ def community_layout(g, partition):
 
     """
 
-    pos_communities = _position_communities(g, partition, scale=3.)
+    pos_communities = _position_communities(g, partition, scale=4.5)
 
-    pos_nodes = _position_nodes(g, partition, scale=1.)
+    pos_nodes = _position_nodes(g, partition, scale=1.3)
 
     # combine positions
     pos = dict()
